@@ -1,0 +1,69 @@
+{
+	"name": "c-cpp-compile-run-windows",
+	"displayName": "c-cpp-compile-run-windows",
+	"description": "Compile & Run single c/c++ files easly on Windows",
+	"version": "0.0.2",
+	"publisher": "BDZNH",
+	"icon": "resources/logo.png",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.CompileRun"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.CompileRun",
+				"title": "Compile & Run"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "extension.CompileRun",
+					"when": "editorLangId ==  c"
+				},
+				{
+					"command": "extension.CompileRun",
+					"when": "editorLangId ==  cpp"
+				}
+			]
+		},
+		"keybindings": [
+			{
+				"mac": "cmd+r",
+				"win": "f6",
+				"linux": "f6",
+				"key": "f6",
+				"command": "extension.CompileRun"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"tslint": "^5.8.0",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"path": "^0.12.7"
+	},
+	"__metadata": {
+		"id": "39dde894-1707-43a8-b4a3-584bf50b9fea",
+		"publisherId": "ae8bf73f-0fed-4c4a-93f8-248508fa8799",
+		"publisherDisplayName": "BDZNH"
+	}
+}

@@ -1,0 +1,18 @@
+/// <reference types="node" />
+import http = require("http");
+import https = require("https");
+import Config = require("./Config");
+import TelemetryClient = require("../Library/TelemetryClient");
+declare class Util {
+    static MAX_PROPERTY_LENGTH: number;
+    static tlsRestrictedAgent: https.Agent;
+    /**
+     * helper method to access userId and sessionId cookie
+     */
+    static getCookie(name: string, cookie: string): string;
+    /**
+     * helper method to trim strings (IE8 does not implement String.prototype.trim)
+     */
+    static trim(str: string): string;
+    /**
+     * Convert an array of int32 to Base64 (no '==' at the 

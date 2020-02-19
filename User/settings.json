@@ -1,0 +1,131 @@
+{
+    "C_Cpp.default.includePath": [
+        "F:\\Dev-Cpp\\MinGW64"
+    ],
+    "C_Cpp.default.browse.path": [
+        "F:\\Dev-Cpp\\MinGW64"
+    ],
+    "editor.fontFamily": " 'Monaco' ",
+    "files.defaultLanguage": "cpp",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "markdown.preview.fontSize": 15,
+    "terminal.integrated.rendererType": "dom",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1,
+    "explorer.confirmDelete": false,
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "explorer.confirmDragAndDrop": false,
+    "bracketPairColorizer.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        [
+            "LightBlue",
+            "SkyBlue",
+            "LightSkyBlue"
+        ],
+        "Red"
+    ],
+    "breadcrumbs.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveTimeout": 1000,
+    "workbench.iconTheme": "material-icon-theme",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "C_Cpp.enhancedColorization": "Disabled",
+    "workbench.colorTheme": "Atom One Dark",
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "C_Cpp.intelliSenseCacheSize": 0,
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "editor.formatOnPaste": true,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk"
+    ],
+    "editor.autoClosingBrackets": "never",
+    "editor.fontSize": 18,
+}

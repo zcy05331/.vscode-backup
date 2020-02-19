@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/bukas/.nvm/versions/node/v4.4.5/bin/node',
+1 verbose cli   '/Users/bukas/.nvm/versions/node/v4.4.5/bin/npm',
+1 verbose cli   'show',
+1 verbose cli   'vsce',
+1 verbose cli   'version' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.5
+4 silly mapToRegistry name vsce
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry http://100.73.16.43:4873/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'vsce',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: 'vsce',
+7 silly mapToRegistry   name: 'vsce',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri http://100.73.16.43:4873/vsce
+9 verbose request uri http://100.73.16.43:4873/vsce
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 19:11:55
+12 verbose request using bearer token for auth
+13 verbose request id 367927c59b09b23a
+14 verbose etag "60d34e0ea2e7b078e9d4f2e6d1513a7c"
+15 http request GET http://100.73.16.43:4873/vsce
+16 http 304 http://100.73.16.43:4873/vsce
+17 verbose headers { 'x-powered-by': 'Sinopia/1.4.0',
+17 verbose headers   etag: '"60d34e0ea2e7b078e9d4f2e6d1513a7c"',
+17 verbose headers   'x-status-cat': 'http://flic.kr/p/aXY3dH',
+17 verbose headers   date: 'Wed, 02 Nov 2016 11:11:56 GMT',
+17 verbose headers   connection: 'keep-alive' }
+18 silly get cb [ 304,
+18 silly get   { 'x-powered-by': 'Sinopia/1.4.0',
+18 silly get     etag: '"60d34e0ea2e7b078e9d4f2e6d1513a7c"',
+18 silly get     'x-status-cat': 'http://flic.kr/p/aXY3dH',
+18 silly get     date: 'Wed, 02 Nov 2016 11:11:56 GMT',
+18 silly get     connection: 'keep-alive' } ]
+19 verbose etag http://100.73.16.43:4873/vsce from cache
+20 verbose get saving vsce to /Users/bukas/.npm/100.73.16.43_4873/vsce/.cache.json
+21 verbose correctMkdir /Users/bukas/.npm correctMkdir not in flight; initializing
+22 verbose exit [ 0, true ]
+23 verbose stack Error: write EPIPE
+23 verbose stack     at exports._errnoException (util.js:870:11)
+23 verbose stack     at WriteWrap.afterWrite (net.js:769:14)
+24 verbose cwd /Users/bukas/web/vscode-GBKtoUTF8
+25 error Darwin 16.0.0
+26 error argv "/Users/bukas/.nvm/versions/node/v4.4.5/bin/node" "/Users/bukas/.nvm/versions/node/v4.4.5/bin/npm" "show" "vsce" "version"
+27 error node v4.4.5
+28 error npm  v3.10.5
+29 error code EPIPE
+30 error errno EPIPE
+31 error syscall write
+32 error write EPIPE
+33 error If you need help, you may report this error at:
+33 error     <https://github.com/npm/npm/issues>
+34 verbose exit [ 1, true ]

@@ -1,0 +1,49 @@
+{
+	"name": "GBKtoUTF8",
+	"displayName": "GBKtoUTF8",
+	"description": "a vscode extension to convert gbk to utf8",
+	"version": "0.0.2",
+	"publisher": "bukas",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"homepage": "https://github.com/huanz/vscode-GBKtoUTF8",
+	"keywords": [
+		"vscode",
+		"gbk",
+		"gb2312",
+		"utf8",
+		"编码",
+		"乱码"
+	],
+	"bugs": {
+		"url": "https://github.com/huanz/vscode-GBKtoUTF8/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/huanz/vscode-GBKtoUTF8.git"
+	},
+	"devDependencies": {
+		"typescript": "^1.6.2",
+		"vscode": "0.10.x"
+	},
+	"dependencies": {
+		"iconv-lite": "^0.4.13"
+	},
+	"__metadata": {
+		"id": "51604e47-0bb3-43c0-9226-a74eeca7cd84",
+		"publisherId": "1ef9d8df-c98a-4abe-a918-372ad7a50e35",
+		"publisherDisplayName": "bukas"
+	}
+}
