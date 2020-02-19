@@ -1,1 +1,1 @@
-# .vscode-backup
+zcy's .vscode settings backup
